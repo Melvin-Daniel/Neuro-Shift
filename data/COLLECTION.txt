@@ -1,0 +1,23 @@
+Multi-user EMG data for train_emg_model.py
+==========================================
+
+Per person, create a folder here with exactly three files:
+  rest.csv
+  jaw_clench.csv
+  eyebrow_raise.csv
+
+Example:
+  data/melvin/rest.csv
+  data/melvin/jaw_clench.csv
+  data/melvin/eyebrow_raise.csv
+  data/friend/rest.csv
+  ...
+
+Run: python collect_data.py
+When prompted, enter the folder name (e.g. melvin) so files save under data/<name>/.
+
+Training loads every subfolder of data/ that contains all three CSVs.
+If at least one such folder exists, root-level rest/jaw/eyebrow CSVs are ignored (no duplicate windows).
+If data/ has no complete user folder, training falls back to the three CSVs in the project root.
+
+Use the same electrode placement and Arduino sketch for everyone.

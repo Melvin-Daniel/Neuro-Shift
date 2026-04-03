@@ -1,0 +1,50 @@
+{
+  "serial": {
+    "port": "COM4",
+    "baud": 9600
+  },
+  "model": {
+    "path": "emg_rf_model.pkl"
+  },
+  "serial_reconnect": {
+    "initial_backoff_s": 0.5,
+    "max_backoff_s": 5.0,
+    "stale_frame_warn_s": 3.0,
+    "stale_warn_interval_s": 5.0
+  },
+  "live": {
+    "window_size": 100,
+    "step_size": 10,
+    "arm_timeout_s": 0.0,
+    "stay_armed_after_jaw": true,
+    "consensus_n_jaw": 4,
+    "consensus_jaw_min_votes": 3,
+    "consensus_jaw_armed_accum": 4,
+    "min_proba_margin_jaw": 0.20,
+    "confidence_gate_jaw": 0.80,
+    "consensus_n_eyebrow": 2,
+    "confidence_gate_eyebrow": 0.58,
+    "min_proba_margin_eyebrow": 0.06,
+    "eyebrow_double_tap_window_s": 1.6,
+    "eyebrow_tap_debounce_s": 0.7,
+    "eyebrow_toggle_cooldown_s": 1.8,
+    "cooldown_s": 2.0,
+    "use_activity_gate": true,
+    "use_activity_gate_eyebrow": true,
+    "use_activity_gate_jaw": true,
+    "rest_baseline_conf": 0.45,
+    "activity_min_baseline_samples": 8,
+    "activity_rms_multiplier_jaw": 1.52,
+    "activity_rms_multiplier_eyebrow": 1.12,
+    "brow_activity_bypass_min_conf": 0.9,
+    "jaw_activity_bypass_min_conf": 0.9,
+    "activity_baseline_max": 80,
+    "use_brow_tap_detector": true,
+    "brow_tap_rms_multiplier": 1.35,
+    "brow_tap_min_p2p": 45.0,
+    "use_jaw_tap_detector": true,
+    "jaw_tap_only_when_armed": true,
+    "jaw_tap_rms_multiplier": 1.48,
+    "jaw_tap_min_p2p": 52.0
+  }
+}

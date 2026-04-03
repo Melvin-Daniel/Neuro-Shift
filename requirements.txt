@@ -1,0 +1,9 @@
+# Core: data collection, training, live EMG demo
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+pyserial>=3.5
+
+# Optional: Tuya local control in live_emg_demo.py
+tinytuya>=1.13
+python-dotenv>=1.0

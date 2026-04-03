@@ -1,0 +1,31 @@
+Neuro-Shift — First-round evaluation (OSSome Hacks 3.0)
+========================================================
+
+Team: Puranaanooru
+Project: EMG gesture control → smart plug (Tuya local) / optional IFTTT.
+
+What you should have from the submission
+-----------------------------------------
+1. GitHub repository link (in the form) — full source. No .env in the repo.
+2. Optional .env file upload (in the form) — Tuya device id, 16-char local key, LAN IP, version.
+3. This ZIP — short notes for running the demo (no secrets here).
+
+How to test (with hardware)
+---------------------------
+1. Clone the GitHub repo.
+2. Save the team’s .env from the form upload into the repo root as `.env` (same folder as `live_emg_demo.py`).
+3. Python 3.10+, venv recommended:
+     pip install -r requirements.txt
+4. Edit `emg_config.json`: set `serial.port` to the Arduino port (e.g. COM4), or set env `EMG_SERIAL_PORT`.
+5. Close Arduino Serial Monitor. Connect two-channel EMG sketch (see README / `sketch_oct3a/`).
+6. Optional LAN check:  python test_tuya_plug.py
+7. Live demo:           python live_emg_demo.py
+
+Demo intent: double eyebrow → ARM → jaw clench toggles output; double eyebrow again → disarm.
+
+Without hardware / without .env
+-------------------------------
+- Code and README still reviewable; Tuya steps require .env + same LAN as plug.
+- Model file `emg_rf_model.pkl` should be in the repo for a no-train run (per README).
+
+Contact: see README or form for team lead (Melvin Daniel Gilton Rajasekar).

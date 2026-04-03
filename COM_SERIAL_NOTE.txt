@@ -1,0 +1,11 @@
+Serial port (COM) ownership
+---------------------------
+Only one program may open the Arduino serial port at a time.
+
+Before running live_emg_demo.py or collect_data.py, close Arduino IDE Serial Monitor
+and Serial Plotter. Do not run two Python scripts that both open the same COM port
+(e.g. live demo + a LAN bridge) unless the bridge is redesigned to consume data from
+one owner process.
+
+Port and baud are set in emg_config.json (serial.port, serial.baud). Override the
+port with environment variable EMG_SERIAL_PORT if needed.

@@ -1,0 +1,52 @@
+# Secrets (upload separately via the Google Form, not GitHub)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.venv/
+venv/
+ENV/
+
+# Node / mobile & frontends
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+.build/
+build/
+dist/
+*.egg-info/
+.eggs/
+.next/
+out/
+.turbo/
+coverage/
+
+# Local submission bundle (contains .env — never commit)
+neuro-shift-google-form-upload.zip
+.submission_staging/
+neuro-shift-zip/
+
+# Nested repo inside mobile/ (do not commit as submodule accidentally)
+mobile/.git/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Optional: very large local recordings (remove comment to exclude from pushes)
+# data/**/*.csv
