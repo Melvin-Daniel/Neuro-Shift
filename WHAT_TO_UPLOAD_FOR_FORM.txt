@@ -1,0 +1,20 @@
+================================================================================
+  OSSOME HACKS 3.0 — GOOGLE FORM CHECKLIST (Neuro-Shift)
+================================================================================
+
+GitHub (required):  https://github.com/Melvin-Daniel/Neuro-Shift
+Form:                https://forms.gle/Z8jeVGrKX4qBEuxGA
+
+FIELD: GitHub Repository → paste the URL above.
+
+FIELD: Deployed link → leave blank (local hardware + Python).
+
+FIELD: .env file →  C:\Users\MELVIN\neuro-shift\.env  (upload file; not in repo)
+
+FIELD: Zip file →     C:\Users\MELVIN\neuro-shift\neuro-shift-google-form-upload.zip
+  Refresh:  cd C:\Users\MELVIN\neuro-shift
+             powershell -ExecutionPolicy Bypass -File scripts\make_google_form_zip.ps1
+
+Optional: demo video / Figma in form if provided.
+
+================================================================================

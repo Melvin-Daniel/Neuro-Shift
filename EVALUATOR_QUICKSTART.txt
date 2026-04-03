@@ -12,7 +12,7 @@ What you should have from the submission
 
 How to test (with hardware)
 ---------------------------
-1. Clone the GitHub repo.
+1. Clone: https://github.com/Melvin-Daniel/Neuro-Shift
 2. Save the team’s .env from the form upload into the repo root as `.env` (same folder as `live_emg_demo.py`).
 3. Python 3.10+, venv recommended:
      pip install -r requirements.txt
