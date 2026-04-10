@@ -1,9 +1,5 @@
 # Neuro-Shift
 
-**Repository:** [github.com/Melvin-Daniel/Neuro-Shift](https://github.com/Melvin-Daniel/Neuro-Shift) · **Team:** Puranaanooru (OSSome Hacks 3.0)
-
-**Prototype submission (form):** [Google Form](https://forms.gle/Z8jeVGrKX4qBEuxGA) — submit **GitHub link**, **optional `.env`** (not in repo), **optional ZIP** (evaluator notes), **deployed link** only if applicable. Do **not** commit `.env`, `node_modules`, `.build`, or `__pycache__`.
-
 ---
 
 **EMG-based gesture control** for accessibility and smart-home actions: two **AD8232** muscle sensors (jaw + forehead) stream through an **Arduino**, a **Python** pipeline classifies gestures with a **Random Forest**, and the **live demo** can toggle a **Tuya** smart plug (or **IFTTT**) after a deliberate **double-eyebrow “arm”** and **jaw clench** command.
